@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --roxo: #800080;
+}
+
+body {
+    background: #800080;
+    background: linear-gradient(168deg,rgba(128, 0, 128, 1) 0%, rgba(0, 0, 0, 1) 47%, rgba(0, 0, 0, 1) 72%, rgba(0, 0, 0, 1) 100%);
+    /* background-image: url(https://i.pinimg.com/originals/57/52/1e/57521e44486b536872c9416c465e9079.gif); */
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    animation: fundo 20s linear infinite;
+}
+
+
+.container-corpo{
+    text-align: center;
+}
+
+@font-face {
+    font-family:neotech ;
+    src: url(fonte/Techno.ttf);
+}
+
+h1{
+    color: var(--roxo);
+    font-family: neotech;
+    font-weight: 200;
+    color: white;
+    font-size: 3em;
+}
+
+span{
+    color: #b401b4;
+    text-shadow: 0 0 10px var(--roxo);
+    font-size: 1.7em;
+}
+/* BOTAO */
+.botao{
+    margin-top: 4em;
+}
+
+.botao a{
+    background-color: var(--roxo);
+    border-radius: 1em;
+    padding: 1.3em;
+    text-decoration: none;
+    color: white;
+    font-size: 1.3em;
+    font-family: 'Chakra Petch', sans-serif;
+    transition: all .3s ease-in-out;
+    
+}
+
+.botao a:hover{
+    background-color: #b401b4;
+    box-shadow: 0 0 15px var(--roxo);
+    border-radius: 1em 1.5em;
+}
